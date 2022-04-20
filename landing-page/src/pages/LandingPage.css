@@ -1,0 +1,28 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.center {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  background-color: #87CEEB;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.side-image {
+  display: flex;
+  background-color: #87CEEB;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 50%;
+  height: 50%;
+}
