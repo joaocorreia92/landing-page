@@ -13,7 +13,7 @@ const LandingPage = () => {
       .then((res) => {
         const states = res.data
         const response = states.map((state) => ({
-          value: state.nome,
+          value: state.id,
           label: state.nome
         }))
         setData(response);
@@ -25,29 +25,31 @@ const LandingPage = () => {
 
   return (
     <div className="main">
-      <div className="side-image">
-        <img src={aircraft} alt="Planing aircraft." className="image" />
-      </div>
       <div className="center">
         <div className="menu">
           <div className="logo">
             <h3>Landing Page</h3>
           </div>
           <div className="item-menu">
-            <a href="#" className="">
+            <a href="https://github.com/joaocorreia92" className="login">
               Login
             </a>
           </div>
         </div>
 
         <div>
-          <h2>Entre em contato!</h2>
+          <h2 className="frase">Entre em contato!</h2>
           <form className="form">
             <div className="items-form">
               <input
                 type="text"
                 className="form-control"
                 placeholder="Nome"
+              ></input>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Idade"
               ></input>
               <input
                 type="text"
@@ -69,8 +71,8 @@ const LandingPage = () => {
                 className="form-control"
                 placeholder="Número"
               ></input>
-              <Select options={data} />
-              <input type="submit"></input>
+              <Select fullWidth options={data} />
+              <input className="button" type="submit"></input>
             </div>
           </form>
         </div>
