@@ -1,2 +1,2 @@
 # landing-page
-Simple landing page using HTML, CSS and React.
+Landing page coded in React.
